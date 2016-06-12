@@ -26,11 +26,11 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Martin Honor</a>
+				<a class="navbar-brand" href="#header">Martin Honor</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><a href="#header">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -40,13 +40,14 @@
 	
 	<!-- Header -->
 	<div class="content-section-a">
-		<div class="container">
-			<h2 id="title">Martin Honor - Toastmaster</h2>
-			<div class="row" id="header">
-				<div class="col-sm-4 portrait-holder">
-					<img class="portrait" src="img/placeholder.jpg">
+		<a class="anchor" id="header"></a>
+		<div class="container header">
+			<h1 id="title">Martin Honor - Toastmaster</h1>
+			<div class="row">
+				<div class="col-sm-3 portrait-holder">
+					<img class="portrait" src="img/martin.jpg">
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-9">
 					<p  id="maintxt">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
@@ -56,20 +57,35 @@
 	</div>
 	
 	<!-- About -->
-	<div class="content-section-b" id="about">
+	<div class="content-section-b">
+		<a class="anchor" id="about"></a>
 		<div class="container">
-			<h3>About</h3>
+			<h2>About</h2>
+			<div class="about-text">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu mattis massa efficitur convallis. Vestibulum in velit et leo placerat dictum imperdiet eu nisl. Praesent pharetra, purus quis facilisis faucibus, tellus quam porttitor nulla, consequat iaculis dolor nisi sed neque. Vivamus quis leo vestibulum, placerat magna ut, convallis leo. Nam euismod a sapien et fringilla. Aliquam consequat turpis vitae quam gravida molestie. Sed urna felis, tincidunt nec dui nec, vestibulum rhoncus nisi. Vestibulum pharetra elit nibh, egestas aliquam elit malesuada et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed faucibus metus urna, cursus imperdiet dolor pretium sed. Sed ultrices augue lectus, non sollicitudin nulla ultricies in. Sed convallis erat vitae sollicitudin aliquet. Curabitur dictum pulvinar libero, ut placerat magna. Mauris sed cursus augue. Sed molestie erat varius enim hendrerit sagittis. Pellentesque finibus nisi posuere, iaculis dui sit amet, tempus quam.
+				</p>
+				<p>
+				Aenean vel tincidunt sapien, sed dapibus metus. Mauris fermentum pharetra orci ac malesuada. Quisque finibus libero at velit lacinia, eget tristique eros porta. Nulla et dignissim ipsum. Quisque sit amet quam commodo, hendrerit odio a, vehicula elit. Proin scelerisque est purus, sit amet consequat ligula luctus id. Integer eget lacus sed metus vehicula sodales sed id est. Fusce malesuada rhoncus eros, sed elementum justo ultricies ac. Curabitur molestie suscipit finibus. Nunc tincidunt sed metus ut auctor. Maecenas sed nisi ac arcu maximus varius.
+				</p>
+				<p>
+				Aliquam vestibulum faucibus lectus sed tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eu libero in ipsum commodo auctor. Donec eu aliquam lorem. Quisque tincidunt elit at orci condimentum, vel lobortis mi congue. Sed volutpat libero sit amet risus convallis, a vestibulum sem efficitur. Suspendisse in gravida enim. Cras ut tellus id libero tempor mollis nec at felis. Suspendisse sit amet est sodales, tempor dolor in, rutrum ante. Mauris et tristique justo.
+				</p>
+			</div>
+			<img class="wedding-img" src="img/wedding.jpg">
 		</div>
 	</div>
 	
 	<!-- Contact -->
-	<div class="content-section-a" id="contact">
+	<div class="content-section-a">
+		<a class="anchor" id="contact"></a>
 		<div class="container">
-			<h3>Contact</h3>
+			<h2>Contact</h2>
 			<div id="contact-form">
 				<input type="text" class="form-control contact-form" placeholder="Name">
 				<input type="text" class="form-control contact-form" placeholder="Email">
 				<textarea class="form-control contact-form" rows="5" placeholder="Message"></textarea>
+				<button class="btn btn-default" type="button">Send</button>
 			</div>
 			<div class="row contact-details">
 				<div class="col-sm-4">
@@ -101,5 +117,7 @@
 		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/general.js"></script>
 </body>
 </html>

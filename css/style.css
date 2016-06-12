@@ -1,6 +1,15 @@
+/* General CSS */
+
+@font-face {
+    font-family: "headings";
+    src: url('../fonts/euler.otf');
+}
+
 body {
 	padding-top: 50px;
 	padding-bottom: 3%;
+	
+	font-family: headings;
 }
 
 p {
@@ -8,9 +17,31 @@ p {
     text-justify: inter-word;
 }
 
+/* navbar */
+
+.navbar-brand {
+	font-size: 1.8em;
+}
+
+.navbar li {
+	font-size: 1.2em;
+}
+
+.navbar a:hover {
+	background-color: #E7E7E7 !important;
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -60px;
+	visibility: hidden;
+}
+
+/* content holders */
 .content-section-a, .content-section-b {
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	padding-left: 20px;
 	padding-right: 20px;
 	
@@ -22,12 +53,19 @@ p {
 }
 
 .content-section-b {
-	background-color: #E6E6FC;
+	background-color: snow;
 }
 
-#title {
+/* header section */
+
+.header {
+	font-size: 1.3em;
+}
+
+.header h1{
 	margin-bottom: 30px;
 	text-align: center;
+	font-size: 2.4em;
 }
 
 .portrait {
@@ -38,29 +76,64 @@ p {
 	max-height: 100%;
 }
 
-#maintxt {
-	font-size: 1.2em;
+/* about section */
+
+.about-text {
+	font-size: 1.1em;
+	margin-bottom: 30px;
 }
 
-#contact input, #contact textarea {
+.wedding-img {
+	max-width: 70%;
+}
+
+/*contact section */
+
+#contact-form {
+	margin-bottom: 20px;
+}
+
+#contact-form * {
 	margin-bottom: 10px;
 	max-width: 70%;
+}
+
+#contact-form .btn {
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+#contact-form .btn:hover{
+	background-color: #56C2FC;
 }
 
 .contact-details div {
 	margin-bottom: 18px;
 }
 
+/* footer */
+
 #webcredit {
 	font-size: x-small;
 }
 
+/* media queries */
+
 @media (max-width: 767px) {
+	.header h1 {
+		font-size: 2em;
+	}
+	
 	.portrait-holder {
 		margin-bottom: 30px;
 	}
 	
 	#contact input, #contact textarea {
+		max-width: 100%;
+	}
+	
+	.wedding-img {
 		max-width: 100%;
 	}
 }
