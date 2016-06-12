@@ -13,7 +13,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	
 </head>
-<body role="document">
+<body id="home" role="document">
 	<!-- Top navbar -->
 	
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -38,14 +38,13 @@
 		</div>
 	</nav>
 	
-	<div class="container" role="main">
-	
-		<!-- Header -->
-		<div class="jumbotron">
+	<!-- Header -->
+	<div class="content-section-a">
+		<div class="container">
 			<h2 id="title">Martin Honor - Toastmaster</h2>
 			<div class="row" id="header">
-				<div class="col-sm-4">
-					<img id="portrait" src="img/placeholder.jpg">
+				<div class="col-sm-4 portrait-holder">
+					<img class="portrait" src="img/placeholder.jpg">
 				</div>
 				<div class="col-sm-8">
 					<p  id="maintxt">
@@ -54,14 +53,53 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	
+	<!-- About -->
+	<div class="content-section-b" id="about">
+		<div class="container">
+			<h3>About</h3>
+		</div>
+	</div>
+	
+	<!-- Contact -->
+	<div class="content-section-a" id="contact">
+		<div class="container">
+			<h3>Contact</h3>
+			<div id="contact-form">
+				<input type="text" class="form-control contact-form" placeholder="Name">
+				<input type="text" class="form-control contact-form" placeholder="Email">
+				<textarea class="form-control contact-form" rows="5" placeholder="Message"></textarea>
+			</div>
+			<div class="row contact-details">
+				<div class="col-sm-4">
+					<b>Phone:</b><br>
+					01373 823061<br><br>
+					<b>Email:</b><br>
+					<a href="mailto:info@honorceremonies.co.uk">info@honorceremonies.co.uk</a>
+				</div>
+				<div class="col-sm-8">
+					<b>Post:</b><br>
+					7 Lansdowne Close<br>
+					Dilton Marsh<br>
+					Westbury<br>
+					Wiltshire<br>
+					BA13 4JH
+				</div>
+			</div>
+		</div>
+	</div>
 		
-		<!-- Footer -->
-		<div class="container" role="main">
+	<!-- Footer -->
+	<div role="main">
+		<div class="container">
 			<div id="footer">
 				<div id="webcredit">Page created by Richard Honor</div>
 			</div>
 		</div>
-	
 	</div>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
