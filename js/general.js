@@ -1,4 +1,6 @@
-$(document).ready(function () {
+$(document).ready(function(){
+	
+	//navbar click events
     $("nav a[href^='#']").on("click", function(e){
 		//prevent immediate jump followed by animation
 		e.preventDefault();
@@ -16,5 +18,26 @@ $(document).ready(function () {
 		}, 600, 'swing', function () {
 			window.location.hash = hash;
 		});
+	});
+	
+	$('.navbar-collapse a').click(function(){
+		$(".navbar-collapse").collapse('hide');
+	});
+	
+	//contact form events
+	$input = $(".contact-form input, .contact-form textarea")
+	$input.on("input", function(){
+		var empty = false;
+		$input.each(function() {
+			if(this.value == ""){
+				empty = true;
+				return;
+			}
+		});
+		if (!empty){
+			$(".contact-btn").removeAttr("disabled");
+		} else {
+			$(".contact-btn").attr("disabled");
+		}
 	});
 });
